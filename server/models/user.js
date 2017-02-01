@@ -75,14 +75,30 @@ var UserSchema = new Schema({
     default: 'local'
   },
   salt: String,
-  phoneNumber: String,
-  gender: String,
-  shirtsize: String,
-  dietary: String,
-  study: String,
-  school: String,
-  major: String,
-  special: String,
+  phoneNumber: {
+    type: String
+  },
+  gender: {
+    type: String
+  },
+  shirtsize: {
+    type: String
+  },
+  dietary: {
+    type: String
+  },
+  study: {
+    type: String
+  },
+  school: {
+    type: String
+  },
+  major: {
+    type: String
+  },
+  special: {
+    type: String
+  },
   resetPasswordToken: String,
   resetPasswordExpires: Date,
   profile: {},
