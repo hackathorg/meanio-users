@@ -198,6 +198,8 @@ UserSchema.methods.toJSON = function() {
   var obj = this.toObject();
   delete obj.hashed_password;
   delete obj.salt;
+  delete obj.resetPasswordToken;
+  delete obj.resetPasswordExpires;
   return obj;
 };
 
