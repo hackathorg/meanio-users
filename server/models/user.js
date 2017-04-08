@@ -200,6 +200,9 @@ UserSchema.methods.toJSON = function() {
   delete obj.salt;
   delete obj.resetPasswordToken;
   delete obj.resetPasswordExpires;
+  delete obj.follows;
+  delete obj.followers;
+  delete obj.events;
   return obj;
 };
 
