@@ -5,6 +5,7 @@
  */
 var mongoose  = require('mongoose'),
   Schema    = mongoose.Schema,
+  ObjectId = Schema.ObjectId,
   crypto    = require('crypto'),
   _   = require('lodash');
 
@@ -99,6 +100,7 @@ var UserSchema = new Schema({
   special: {
     type: String
   },
+  events: [{eventId: ObjectID, role: String}],
   resetPasswordToken: String,
   resetPasswordExpires: Date,
   profile: {},
